@@ -2,10 +2,10 @@ class Pokemon
   attr_accessor :id, :name, :type, :db
 
   def initialize(input)
-    @id = input[id]
-    @name = input[name]
-    @type = input[type]
-    @db = input[db]
+    @id = input[:id]
+    @name = input[:name]
+    @type = input[:type]
+    @db = input[:db]
   end
 
   def self.all
