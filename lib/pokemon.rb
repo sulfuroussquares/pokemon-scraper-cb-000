@@ -7,6 +7,7 @@ class Pokemon
     @name = input[:name]
     @type = input[:type]
     @db = input[:db]
+    @hp = 60
     @@all << self
     input
   end
