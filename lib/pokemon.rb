@@ -19,7 +19,7 @@ end
 def self.find(id, db)
     tempObj = []
     tempObj << db.execute("SELECT id FROM POKEMON WHERE id = (?)",id)
-    tempObj
+    tempObj.flatten
     #Pokemon.new(pokemon)
 end
 
