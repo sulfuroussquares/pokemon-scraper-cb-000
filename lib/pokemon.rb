@@ -17,8 +17,8 @@ def self.save(name, type, db)
 end
 
 def self.find(id, db)
-    tempObj = []
-    tempObj << db.execute("SELECT * FROM POKEMON WHERE id = (?)",id)
+  #  tempObj = []
+     db.execute("SELECT * FROM POKEMON WHERE id = (?)",id)
 
     #Pokemon.new(pokemon)
 end
