@@ -18,7 +18,7 @@ end
 
 def self.find(id, db)
     db.execute("SELECT * FROM POKEMON WHERE id=?",id).first
-    Pokemon.new(pokemon)
+    #Pokemon.new(pokemon)
 end
 
 
