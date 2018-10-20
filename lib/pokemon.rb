@@ -23,6 +23,7 @@ def self.find(id, db)
      pokemonInfo[id] = id
      pokemonInfo[name] = name
      pokemonInfo[type] = type
+     pokemonInfo[db] = db
      #foundPokemon = Pokemon.new(pokemonInfo)
      puts foundPokemon.id
 
