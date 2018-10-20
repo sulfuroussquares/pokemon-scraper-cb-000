@@ -7,7 +7,6 @@ class Pokemon
     @name = input[:name]
     @type = input[:type]
     @db = input[:db]
-    @hp = 60
     @@all << self
     input
   end
@@ -24,7 +23,7 @@ def self.find(id, db)
      pokemonInfo = {}
      type = db.execute("SELECT type FROM pokemon WHERE id = #{id}").flatten[0]
      name = db.execute("SELECT name FROM pokemon WHERE id = #{id}").flatten[0]
-     info = {id: id, name: name, type: type, db: db,}
+     info = {id: id, name: name, type: type, db: db}
      foundPokemon = Pokemon.new(info)
 end
 
