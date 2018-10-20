@@ -17,7 +17,7 @@ def self.save(name, type, db)
 end
 
 def self.find(id, db)
-    db.execute("SELECT id FROM POKEMON WHERE id = (?)",id)
+    db.execute("SELECT id FROM POKEMON WHERE id = (?)",id).flatten
     #Pokemon.new(pokemon)
 end
 
