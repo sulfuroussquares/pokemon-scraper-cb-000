@@ -24,10 +24,7 @@ def self.find(id, db)
      type = db.execute("SELECT type FROM pokemon WHERE id = #{id}").flatten[0]
      name = db.execute("SELECT name FROM pokemon WHERE id = #{id}").flatten[0]
      info = {id: id, name: name, type: type, db: db}
-     #foundPokemon = Pokemon.new(pokemonInfo)
      foundPokemon = Pokemon.new(info)
-
-    #Pokemon.new(pokemon)
 end
 
 
