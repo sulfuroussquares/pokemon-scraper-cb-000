@@ -18,7 +18,7 @@ end
 
 def self.find(id, db)
   #  tempObj = []
-     db.execute("SELECT id FROM POKEMON WHERE id = #{id}").flatten[0]
+     type = db.execute("SELECT type FROM POKEMON WHERE id = #{id}").flatten[0]
      pokemonInfo = {id: id, name: name, type: type}
 
     #Pokemon.new(pokemon)
